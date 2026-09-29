@@ -18,6 +18,7 @@ function updateFooterAccordions() {
     const isExpanded = !footerMobileQuery.matches;
 
     column.classList.toggle("is-expanded", isExpanded);
+    toggle.disabled = !footerMobileQuery.matches;
     toggle.setAttribute("aria-expanded", String(isExpanded));
   });
 }
