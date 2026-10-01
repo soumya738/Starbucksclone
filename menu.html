@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu | Starbucks</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="menu.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="header">
+      <div class="header-container">
+        <div class="brand-nav">
+          <a href="index.html" class="brand" aria-label="Starbucks home">
+            <img src="Starbucks_logo.png" alt="Starbucks logo" />
+          </a>
+          <nav aria-label="Main navigation" class="desktop-nav">
+            <ul class="main-nav">
+              <li><a href="menu.html" aria-current="page">Menu</a></li>
+              <li><a href="index.html#rewards">Rewards</a></li>
+              <li><a href="index.html#gift-cards">Gift Cards</a></li>
+            </ul>
+          </nav>
+        </div>
+        <nav
+          aria-label="Utility navigation"
+          class="desktop-nav utility-nav-wrap"
+        >
+          <ul class="utility-nav">
+            <li>
+              <a href="index.html#find-cafe" class="find-cafe">Find a café</a>
+            </li>
+            <li><a href="index.html#sign-in" class="sign-in">Sign in</a></li>
+            <li><a href="index.html#rewards" class="join-btn">Join now</a></li>
+          </ul>
+        </nav>
+        <button
+          class="menu-toggle"
+          aria-label="Toggle navigation"
+          aria-controls="mobilePanel"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <div class="mobile-panel" id="mobilePanel">
+        <nav aria-label="Mobile navigation" class="mobile-nav">
+          <ul>
+            <li><a href="menu.html" aria-current="page">Menu</a></li>
+            <li><a href="index.html#rewards">Rewards</a></li>
+            <li><a href="index.html#gift-cards">Gift Cards</a></li>
+            <li><a href="index.html#find-cafe">Find a café</a></li>
+            <li><a href="index.html#sign-in">Sign in</a></li>
+            <li>
+              <a href="index.html#rewards" class="mobile-join">Join now</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content" class="menu-page">
+      <aside class="menu-sidebar" aria-label="Menu categories">
+        <h2>Menu</h2>
+        <nav>
+          <a href="#featured">Featured</a>
+          <a href="#hot-coffees">Hot Coffee</a>
+          <a href="#cold-coffees">Cold Coffee</a>
+          <a href="#frappuccino">Frappuccino® Blended Beverages</a>
+          <a href="#refreshers">Refreshers®</a>
+          <a href="#food">Food</a>
+        </nav>
+      </aside>
+
+      <div class="menu-content">
+        <section class="menu-feature" id="featured">
+          <img src="ordernow.png" alt="A selection of Starbucks fall drinks" />
+          <div>
+            <p class="menu-eyebrow">Discover what's new</p>
+            <h1>Good things are on the menu</h1>
+            <p>
+              Explore your Starbucks favorites, from everyday coffee to seasonal
+              sips.
+            </p>
+          </div>
+        </section>
+
+        <section class="menu-section" id="hot-coffees">
+          <h2>Hot Coffee</h2>
+          <div class="menu-items">
+            <article>
+              <span class="menu-item-mark" aria-hidden="true">☕</span>
+              <div>
+                <h3>Caffè Americano</h3>
+                <p>Espresso shots topped with hot water.</p>
+              </div>
+            </article>
+            <article>
+              <span class="menu-item-mark" aria-hidden="true">☕</span>
+              <div>
+                <h3>Caffè Latte</h3>
+                <p>Espresso with steamed milk and a light layer of foam.</p>
+              </div>
+            </article>
+            <article>
+              <span class="menu-item-mark" aria-hidden="true">☕</span>
+              <div>
+                <h3>Cappuccino</h3>
+                <p>Espresso with steamed milk and a deep layer of foam.</p>
+              </div>
+            </article>
+            <article>
+              <span class="menu-item-mark" aria-hidden="true">☕</span>
+              <div>
+                <h3>Caramel Macchiato</h3>
+                <p>Vanilla-flavored milk marked with espresso and caramel.</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="menu-section" id="cold-coffees">
+          <h2>Cold Coffee</h2>
+          <div class="menu-items">
+            <article>
+              <span class="menu-item-mark cold" aria-hidden="true">✳</span>
+              <div>
+                <h3>Cold Brew</h3>
+                <p>Slow-steeped in cool water for a smooth, balanced flavor.</p>
+              </div>
+            </article>
+            <article>
+              <span class="menu-item-mark cold" aria-hidden="true">✳</span>
+              <div>
+                <h3>Vanilla Sweet Cream Cold Brew</h3>
+                <p>Cold brew topped with a subtly sweet vanilla cream.</p>
+              </div>
+            </article>
+            <article>
+              <span class="menu-item-mark cold" aria-hidden="true">✳</span>
+              <div>
+                <h3>Iced Brown Sugar Oatmilk Shaken Espresso</h3>
+                <p>Blonde espresso shaken with brown sugar and oatmilk.</p>
+              </div>
+            </article>
+            <article>
+              <span class="menu-item-mark cold" aria-hidden="true">✳</span>
+              <div>
+                <h3>Iced Caffè Latte</h3>
+                <p>Espresso poured over ice with fresh, cold milk.</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="menu-section" id="frappuccino">
+          <h2>Frappuccino® Blended Beverages</h2>
+          <div class="menu-items">
+            <article>
+              <span class="menu-item-mark blended" aria-hidden="true">✦</span>
+              <div>
+                <h3>Caramel Ribbon Crunch Frappuccino®</h3>
+                <p>
+                  Caramel blended with coffee, milk and ice, finished with
+                  crunch.
+                </p>
+              </div>
+            </article>
+            <article>
+              <span class="menu-item-mark blended" aria-hidden="true">✦</span>
+              <div>
+                <h3>Mocha Frappuccino®</h3>
+                <p>
+                  Coffee, mocha sauce, milk and ice topped with whipped cream.
+                </p>
+              </div>
+            </article>
+            <article>
+              <span class="menu-item-mark blended" aria-hidden="true">✦</span>
+              <div>
+                <h3>Vanilla Bean Crème Frappuccino®</h3>
+                <p>A creamy blend of vanilla bean, milk and ice.</p>
+              </div>
+            </article>
+            <article>
+              <span class="menu-item-mark blended" aria-hidden="true">✦</span>
+              <div>
+                <h3>Strawberry Crème Frappuccino®</h3>
+                <p>Strawberries and crème blended together with ice.</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="menu-section" id="refreshers">
+          <h2>Refreshers®</h2>
+          <div class="menu-items">
+            <article>
+              <span class="menu-item-mark refresher" aria-hidden="true">✿</span>
+              <div>
+                <h3>Strawberry Açaí Refresher®</h3>
+                <p>Strawberry and açaí flavors with notes of passion fruit.</p>
+              </div>
+            </article>
+            <article>
+              <span class="menu-item-mark refresher" aria-hidden="true">✿</span>
+              <div>
+                <h3>Mango Dragonfruit Refresher®</h3>
+                <p>Sweet mango and dragonfruit flavors over ice.</p>
+              </div>
+            </article>
+            <article>
+              <span class="menu-item-mark refresher" aria-hidden="true">✿</span>
+              <div>
+                <h3>Strawberry Açaí Lemonade</h3>
+                <p>Strawberry açaí blended with lemonade and ice.</p>
+              </div>
+            </article>
+            <article>
+              <span class="menu-item-mark refresher" aria-hidden="true">✿</span>
+              <div>
+                <h3>Pineapple Passionfruit Refresher®</h3>
+                <p>Tropical pineapple and passionfruit flavors over ice.</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="menu-section" id="food">
+          <h2>Food</h2>
+          <div class="menu-items">
+            <article>
+              <span class="menu-item-mark food" aria-hidden="true">◒</span>
+              <div>
+                <h3>Bacon, Gouda &amp; Egg Sandwich</h3>
+                <p>Applewood-smoked bacon, egg and gouda on artisan bread.</p>
+              </div>
+            </article>
+            <article>
+              <span class="menu-item-mark food" aria-hidden="true">◒</span>
+              <div>
+                <h3>Spinach, Feta &amp; Egg White Wrap</h3>
+                <p>
+                  Egg whites, spinach and feta wrapped in a whole-wheat
+                  tortilla.
+                </p>
+              </div>
+            </article>
+            <article>
+              <span class="menu-item-mark food" aria-hidden="true">◒</span>
+              <div>
+                <h3>Butter Croissant</h3>
+                <p>A flaky, buttery pastry baked to a golden finish.</p>
+              </div>
+            </article>
+            <article>
+              <span class="menu-item-mark food" aria-hidden="true">◒</span>
+              <div>
+                <h3>Blueberry Muffin</h3>
+                <p>A tender muffin filled with blueberries.</p>
+              </div>
+            </article>
+          </div>
+        </section>
+        <p class="menu-note">
+          Menu items and availability may vary by location.
+        </p>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-columns">
+          <div class="footer-column">
+            <h2>
+              <button
+                class="footer-toggle"
+                type="button"
+                aria-expanded="true"
+                aria-controls="footer-about-links"
+              >
+                About Us<span class="footer-chevron" aria-hidden="true"></span>
+              </button>
+            </h2>
+            <ul id="footer-about-links">
+              <li><a href="#">Our Heritage</a></li>
+              <li><a href="#">Our Coffee</a></li>
+              <li><a href="#">Stories and News</a></li>
+              <li><a href="#">Investor Relations</a></li>
+              <li><a href="#">Customer Service</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h2>
+              <button
+                class="footer-toggle"
+                type="button"
+                aria-expanded="true"
+                aria-controls="footer-careers-links"
+              >
+                Careers<span class="footer-chevron" aria-hidden="true"></span>
+              </button>
+            </h2>
+            <ul id="footer-careers-links">
+              <li><a href="#">Culture and Values</a></li>
+              <li><a href="#">Inclusion</a></li>
+              <li><a href="#">Learning and Development</a></li>
+              <li><a href="#">Leadership</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h2>
+              <button
+                class="footer-toggle"
+                type="button"
+                aria-expanded="true"
+                aria-controls="footer-impact-links"
+              >
+                Social Impact<span
+                  class="footer-chevron"
+                  aria-hidden="true"
+                ></span>
+              </button>
+            </h2>
+            <ul id="footer-impact-links">
+              <li><a href="#">People</a></li>
+              <li><a href="#">Planet</a></li>
+              <li><a href="#">Environmental and Social</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h2>
+              <button
+                class="footer-toggle"
+                type="button"
+                aria-expanded="true"
+                aria-controls="footer-partners-links"
+              >
+                For Business Partners<span
+                  class="footer-chevron"
+                  aria-hidden="true"
+                ></span>
+              </button>
+            </h2>
+            <ul id="footer-partners-links">
+              <li><a href="#">Landlord Support Center</a></li>
+              <li><a href="#">Suppliers</a></li>
+              <li><a href="#">Corporate Gift Card Sales</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h2>
+              <button
+                class="footer-toggle"
+                type="button"
+                aria-expanded="true"
+                aria-controls="footer-shopping-links"
+              >
+                Ways to Shop<span
+                  class="footer-chevron"
+                  aria-hidden="true"
+                ></span>
+              </button>
+            </h2>
+            <ul id="footer-shopping-links">
+              <li><a href="menu.html">Order on the App</a></li>
+              <li><a href="menu.html">Order Online</a></li>
+              <li><a href="menu.html">Delivery</a></li>
+              <li><a href="#">Corporate Gifting</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-divider"></div>
+        <nav class="social-links" aria-label="Social media">
+          <a
+            href="https://open.spotify.com/user/starbucks"
+            aria-label="Spotify"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <circle cx="12" cy="12" r="10" fill="currentColor" />
+              <path
+                d="M6.7 9.2c3.7-1.1 7.9-.7 11.1 1.3M7.5 12.1c3.1-.9 6.5-.5 9.2 1.1m-8.3 1.8c2.4-.6 4.9-.3 6.9.9"
+                fill="none"
+                stroke="#fff"
+                stroke-linecap="round"
+                stroke-width="1.4"
+              />
+            </svg>
+          </a>
+          <a href="https://facebook.com/starbucks" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path
+                fill="currentColor"
+                d="M13.4 21v-8h2.7l.4-3.1h-3.1v-2c0-.9.3-1.5 1.6-1.5h1.7V3.6c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.1H7.2V13H10v8h3.4Z"
+              />
+            </svg>
+          </a>
+          <a href="https://www.pinterest.com/starbucks/" aria-label="Pinterest">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path
+                fill="currentColor"
+                d="M12 2a10 10 0 0 0-3.6 19.3c0-.8 0-1.8.2-2.7l1.3-5.6s-.3-.6-.3-1.5c0-1.4.8-2.5 1.9-2.5.9 0 1.3.7 1.3 1.5 0 .9-.6 2.3-.9 3.6-.3 1.1.6 2 1.7 2 2.1 0 3.5-2.7 3.5-5.8 0-2.4-1.6-4.2-4.5-4.2-3.3 0-5.4 2.5-5.4 5.2 0 .9.3 1.9.8 2.4.2.3.3.4.2.7l-.3 1c-.1.3-.3.4-.6.3-1.5-.6-2.2-2.3-2.2-4.2 0-3.1 2.7-6.9 8-6.9 4.3 0 7.1 3.1 7.1 6.5 0 4.4-2.4 7.7-6 7.7-1.2 0-2.4-.7-2.8-1.4l-.8 3a10 10 0 1 0-3.1-19.5Z"
+              />
+            </svg>
+          </a>
+          <a href="https://instagram.com/starbucks" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <rect
+                x="3"
+                y="3"
+                width="18"
+                height="18"
+                rx="5"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              />
+              <circle
+                cx="12"
+                cy="12"
+                r="4"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              />
+              <circle cx="17.6" cy="6.6" r="1.2" fill="currentColor" />
+            </svg>
+          </a>
+          <a href="https://www.youtube.com/starbucks" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path
+                fill="currentColor"
+                d="M23 7.1a3 3 0 0 0-2.1-2.2C19 4.4 12 4.4 12 4.4s-7 0-8.9.5A3 3 0 0 0 1 7.1 31 31 0 0 0 .5 12a31 31 0 0 0 .5 4.9 3 3 0 0 0 2.1 2.2c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.2 31 31 0 0 0 .5-4.9 31 31 0 0 0-.5-4.9ZM9.7 15.5v-7l6 3.5-6 3.5Z"
+              />
+            </svg>
+          </a>
+          <a href="https://x.com/starbucks/" aria-label="X">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path
+                fill="currentColor"
+                d="M18.9 2H22l-6.8 7.8L23.2 22h-6.3L12 14.6 5.6 22H2.4l7.3-8.4L1.8 2h6.5l4.5 6.8L18.9 2Zm-1.1 18h1.7L7.3 3.9H5.5L17.8 20Z"
+              />
+            </svg>
+          </a>
+        </nav>
+        <ul class="legal-links">
+          <li><a href="#">Privacy Notice</a></li>
+          <li><a href="#">Consumer Health Privacy Notice</a></li>
+          <li><a href="#">Terms of Use</a></li>
+          <li><a href="#">Do Not Sell or Share My Personal Information</a></li>
+          <li>
+            <a href="#">Starbucks Transparency in Supply Chains Statement</a>
+          </li>
+          <li><a href="#">Accessibility</a></li>
+          <li><button type="button">Cookie Preferences</button></li>
+        </ul>
+        <p class="copyright">
+          © 2026 Starbucks Coffee Company. All rights reserved.
+        </p>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>

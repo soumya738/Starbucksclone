@@ -11,13 +11,13 @@
     <header class="header">
       <div class="header-container">
         <div class="brand-nav">
-          <a href="#" class="brand" aria-label="Starbucks home">
+          <a href="index.html" class="brand" aria-label="Starbucks home">
             <img src="Starbucks_logo.png" alt="Starbucks logo" />
           </a>
 
           <nav aria-label="Main navigation" class="desktop-nav">
             <ul class="main-nav">
-              <li><a href="#menu">Menu</a></li>
+              <li><a href="menu.html">Menu</a></li>
               <li><a href="#rewards">Rewards</a></li>
               <li><a href="#gift-cards">Gift Cards</a></li>
             </ul>
@@ -31,7 +31,7 @@
           <ul class="utility-nav">
             <li><a href="#find-cafe" class="find-cafe">Find a café</a></li>
             <li><a href="#sign-in" class="sign-in">Sign in</a></li>
-            <li><a href="#join" class="join-btn">Join now</a></li>
+            <li><a href="#rewards" class="join-btn">Join now</a></li>
           </ul>
         </nav>
 
@@ -50,12 +50,12 @@
       <div class="mobile-panel" id="mobilePanel">
         <nav aria-label="Mobile navigation" class="mobile-nav">
           <ul>
-            <li><a href="#menu">Menu</a></li>
+            <li><a href="menu.html">Menu</a></li>
             <li><a href="#rewards">Rewards</a></li>
             <li><a href="#gift-cards">Gift Cards</a></li>
             <li><a href="#find-cafe">Find a café</a></li>
             <li><a href="#sign-in">Sign in</a></li>
-            <li><a href="#join" class="mobile-join">Join now</a></li>
+            <li><a href="#rewards" class="mobile-join">Join now</a></li>
           </ul>
         </nav>
       </div>
@@ -65,10 +65,10 @@
       <section class="intro" aria-label="Introduction">
         <div class="intro-inner">
           <h1>Its a great day for Coffee</h1>
-          <a href="#MENU">START AN ORDER</a>
+          <a href="menu.html">START AN ORDER</a>
         </div>
       </section>
-      <section class="egift">
+      <section class="egift" id="gift-cards">
         <div class="egift-inner">
           <img src="Egift.png" alt="Starbucks gift card" />
           <div>
@@ -76,7 +76,7 @@
             <p>
               Treat you favorite person -- because they will be there for you
             </p>
-            <a href="#egift">Send an eGift</a>
+            <a href="#gift-cards">Send an eGift</a>
           </div>
         </div>
       </section>
@@ -89,7 +89,7 @@
               The fall menu is live, with all your favorites and a few delicious
               surprises. Pumpkin, pecan, banana bread and chai, here we come.
             </p>
-            <a href="#order">Order now</a>
+            <a href="menu.html">Order now</a>
           </div>
           <img src="ordernow.png" alt="Fall drinks on a table" />
         </div>
@@ -104,10 +104,98 @@
               Enjoy your drink in the café and get refills of hot or iced brewed
               coffee or tea on us.*
             </p>
-            <a href="#order">Order now</a>
+            <a href="menu.html">Order now</a>
           </div>
         </div>
       </section>
+
+      <section class="rewards-section" id="rewards">
+        <div class="rewards-inner">
+          <div class="rewards-copy">
+            <p class="section-eyebrow">Starbucks Rewards</p>
+            <h2>Make your coffee moments even more rewarding.</h2>
+            <p>
+              Join Starbucks Rewards to earn Stars on the things you love and
+              enjoy more of your favorites.
+            </p>
+            <a href="#sign-in" class="rewards-cta">Sign in or join now</a>
+          </div>
+          <div class="rewards-emblem" aria-hidden="true">
+            <span>★</span>
+            <strong>STARS<br />START HERE</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="store-locator" id="find-cafe">
+        <div class="store-locator-inner">
+          <div>
+            <p class="section-eyebrow">Find your coffee stop</p>
+            <h2>Find a Starbucks near you.</h2>
+            <p>Search by city, state, or ZIP code to look for a nearby café.</p>
+          </div>
+          <form class="store-search" id="store-search-form">
+            <label for="store-location">City, state, or ZIP code</label>
+            <div class="store-search-controls">
+              <input
+                id="store-location"
+                name="location"
+                type="search"
+                placeholder="Enter a location"
+                required
+              />
+              <button type="submit">Search</button>
+            </div>
+            <p
+              class="form-message"
+              id="store-search-message"
+              role="status"
+              aria-live="polite"
+            ></p>
+          </form>
+        </div>
+      </section>
+
+      <section class="signin-section" id="sign-in">
+        <div class="signin-inner">
+          <div class="signin-copy">
+            <p class="section-eyebrow">Welcome back</p>
+            <h2>Sign in to Starbucks.</h2>
+            <p>Access your account and keep your Rewards close by.</p>
+            <a href="#rewards">New to Starbucks Rewards? Join now</a>
+          </div>
+          <form class="signin-form" id="sign-in-form">
+            <label for="signin-email">Email address</label>
+            <input
+              id="signin-email"
+              name="email"
+              type="email"
+              autocomplete="username"
+              required
+            />
+            <label for="signin-password">Password</label>
+            <input
+              id="signin-password"
+              name="password"
+              type="password"
+              autocomplete="current-password"
+              required
+            />
+            <label class="remember-option" for="remember-me">
+              <input id="remember-me" name="remember" type="checkbox" />
+              <span>Remember me</span>
+            </label>
+            <button type="submit">Sign in</button>
+            <p
+              class="form-message"
+              id="sign-in-message"
+              role="status"
+              aria-live="polite"
+            ></p>
+          </form>
+        </div>
+      </section>
+
       <section class="disclaimer">
         <p>
           *Free refills of hot and iced brewed coffee and tea during same store
@@ -217,9 +305,9 @@
               </button>
             </h2>
             <ul id="footer-shopping-links">
-              <li><a href="#">Order on the App</a></li>
-              <li><a href="#">Order Online</a></li>
-              <li><a href="#">Delivery</a></li>
+              <li><a href="menu.html">Order on the App</a></li>
+              <li><a href="menu.html">Order Online</a></li>
+              <li><a href="menu.html">Delivery</a></li>
               <li><a href="#">Corporate Gifting</a></li>
             </ul>
           </div>

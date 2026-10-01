@@ -36,3 +36,24 @@ footerColumns.forEach((column) => {
 
 updateFooterAccordions();
 footerMobileQuery.addEventListener("change", updateFooterAccordions);
+
+const storeSearchForm = document.getElementById("store-search-form");
+const storeSearchMessage = document.getElementById("store-search-message");
+
+if (storeSearchForm && storeSearchMessage) {
+  storeSearchForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+    storeSearchMessage.textContent =
+      "Live store search is not connected in this demo.";
+  });
+}
+
+const signInForm = document.getElementById("sign-in-form");
+const signInMessage = document.getElementById("sign-in-message");
+
+if (signInForm && signInMessage) {
+  signInForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+    signInMessage.textContent = "Sign-in is not connected in this demo.";
+  });
+}
